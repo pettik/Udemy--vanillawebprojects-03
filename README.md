@@ -30,7 +30,7 @@ Custom video player using the HTML5 video element and it's JavaScript API with a
 ## My solution features
 
 - Custom **UI/UX design**
-- Added a **PAUSE button** when the video is stopped; after clicking, the video continues.
+- Added a **PAUSE button** to the middle of video screen when the video is stopped; after clicking, the video continues.
 - Included some **video description** for the current video in the bottom.
 - Displayed the **video duration** alongside the current minutes and seconds.
 
