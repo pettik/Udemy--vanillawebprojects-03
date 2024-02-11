@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: url('../img/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-height: 100vh;
+  position: relative;
+}
+
+body::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+.container {
+  width: 90%;
+  max-width: 767px;
+  margin: 0 auto;
+}
+
+.video-element {
+  position: relative;
+}
+
+.screen {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  border-radius: 0.75rem;
+  position: relative;
+}
+
+.pause-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  display: none; /* Initially hidden */
+}
+
+.pause-image img {
+  display: flex;
+  width: 25%;
+  height: 25%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.container video {
+  width: 100%;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.controls {
+  margin-top: 0.5rem;
+  display: flex;
+  column-gap: 0.5rem;
+  align-items: center;
+}
+
+.controls .btn {
+  background: rgb(240, 240, 240);
+  border: 0;
+  padding: 5px;
+  width: 40px;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  transition: color 0.3s, background 0.3s;
+}
+
+.controls .btn:hover {
+  color: #30a946;
+  background: rgb(255, 255, 255);
+}
+.controls .btn:focus {
+  outline: 0;
+}
+
+.timestampDiv {
+  text-wrap: nowrap;
+  font-weight: bold;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+.info {
+  margin-top: 1rem;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+.info h2 {
+  margin-bottom: 0.25rem;
+}
+
+.info a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 3px;
+}
+
+.info a i {
+  color: #f00;
+  transition: color 0.2s;
+}
+
+.info a i:hover {
+  color: #fff;
+}
+
+.info a:last-child {
+  border-bottom: 2px solid #f00;
+  padding-bottom: 0.125rem;
+  transition: color 0.2s;
+}
+
+.info a:last-child:hover {
+  color: #f00;
+}
